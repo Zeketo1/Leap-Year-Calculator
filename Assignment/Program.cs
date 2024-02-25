@@ -13,7 +13,7 @@ class Program
 
         int leapYearCount = 0;
 
-        Console.WriteLine("Next 20 Leap Years:");
+        Console.WriteLine("Next {0} Leap Years:", second);
 
         while (leapYearCount < second)
         {
@@ -27,8 +27,6 @@ class Program
 
             currentYear++;
         }
-
-        // Console.ReadLine(); 
     }
 
     static bool IsLeapYear(int year)
