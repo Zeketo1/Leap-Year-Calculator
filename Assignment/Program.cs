@@ -4,18 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Write("Enter a number: ");
-        int choice = Console.Read();
-        int second = choice - 48;
-
         
         int currentYear = DateTime.Now.Year;
 
         int leapYearCount = 0;
 
-        Console.WriteLine("Next {0} Leap Years:", second);
+        Console.WriteLine("Next 20 Leap Years:");
 
-        while (leapYearCount < second)
+        while (leapYearCount < 20)
         {
         
             if (IsLeapYear(currentYear))
